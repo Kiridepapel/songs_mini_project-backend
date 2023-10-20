@@ -1,0 +1,40 @@
+# --------------------------------------------------------------------------------------------------------------
+# No tocar la ruta de instalación
+# En el instalador de Python pide seleccionar si instalar PIP o no junto con python, seleccionar SÍ
+- Instalar Python 3.11 (JUNTO A PIP): https://www.python.org/downloads/release/python-3110/
+- Actualizar PIP:
+	python -m pip install -U pip
+- Verificar versiones
+	python --version
+	pip --version
+- Confirmar versiones:
+	versión recomendada: Python 3.11.4
+	versión recomendada: pip 23.2.1
+# --------------------------------------------------------------------------------------------------------------
+# No debe salir ningun error en las instalaciones
+Instalar librerias de python
+	pip install jep
+	pip install youtube-search-python
+	pip install lyricsgenius
+# --------------------------------------------------------------------------------------------------------------
+# VSCODE:
+- Configurar los argumentos de la JVM:
+	Buscar y agregar en 'settings.json' (ctrl + shift + p): '> user settings'
+	"spring-boot.ls.java.home": "C:\\Program Files\\Java\\jdk-17.0.7",
+	"java.jdt.ls.vmargs": "-Djava.library.path=C:\\Python311\\Lib\\site-packages\\jep",
+	"java.debug.settings.vmArgs": "-Djava.library.path=C:\\Python311\\Lib\\site-packages\\jep",
+- VSCode usa el intérprete de Python instalado en el sistema operativo
+# --------------------------------------------------------------------------------------------------------------
+# JDK-17: https://www.oracle.com/java/technologies/javase/jdk17-archive-downloads.html
+# INTELLIJ: https://www.jetbrains.com/idea/download/?section=windows
+- Configurar los argumentos de la JVM:
+	Abre IntelliJ IDEA y selecciona 'Run' > 'Edit Configurations...'
+	En la ventana 'Build and run', selecciona 'Modify options'
+	En la sección 'Java' , busca el campo 'Add VM options (CTRL + V)'
+	Escribe los argumentos: -Djava.library.path=C:\\Python311\\Lib\\site-packages\\jep
+	Haz clic en 'Apply' y luego en 'OK' para guardar los cambios
+- Configurar un intérprete de Python en IntelliJ IDEA:
+	Abre IntelliJ IDEA y selecciona 'File' > 'Project Structure'
+	En la ventana 'Project Structure', selecciona 'SDKs' en el panel izquierdo
+	Haz clic en el botón '+' y selecciona algún Python SDK (de preferencia la ruta de instalación en tu PC)
+# --------------------------------------------------------------------------------------------------------------

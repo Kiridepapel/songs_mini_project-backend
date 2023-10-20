@@ -1,0 +1,29 @@
+{
+  "properties": [
+    {
+      "name": "spotify.client.secret",
+      "type": "java.lang.String",
+      "description": "A description for 'spotify.client.secret'"
+    },
+    {
+      "name": "spotify.client.id",
+      "type": "java.lang.String",
+      "description": "A description for 'spotify.client.id'"
+    },
+    {
+      "name": "google.api.key",
+      "type": "java.lang.String",
+      "description": "A description for 'google.api.key'"
+    },
+    {
+      "name": "rapid.api.key",
+      "type": "java.lang.String",
+      "description": "A description for 'rapid.api.key'"
+    },
+    {
+      "name": "genius.client.access.token",
+      "type": "java.lang.String",
+      "description": "A description for 'client.access.token'"
+    }
+  ]
+}
